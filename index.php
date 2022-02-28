@@ -71,7 +71,7 @@ $questions = [
     ]
 ]
 
-var_dump("$questions['cgue'] - $questions['cgue']");
+var_dump($questions['cgue']);
 ?>
 
 <!DOCTYPE html>
