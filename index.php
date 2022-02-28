@@ -148,6 +148,13 @@ $questions = [
             border-bottom: 3px dodgerblue solid;
             padding-bottom:30px;
         }
+        .select:hover{
+            cursor: pointer;
+            color: dodgerblue;
+            font-weight: 500;
+            border-bottom: 3px dodgerblue solid;
+            padding-bottom:30px;
+        }
         .else{
             font-size: 12px;
         }
@@ -172,11 +179,11 @@ $questions = [
             <nav class="col-7 m-0">
                 <div class="container">
                     <div class="row justify-content-around text-center">
-                        <div class="col-2">Introduzione</div>
-                        <div class="col-2">Norme sulla privacy</div>
-                        <div class="col-2">Termini di servizio</div>
-                        <div class="col-2">Tecnologie</div>
-                        <div class="col-2"><p class="selected">Domande Frequenti</p></div>
+                        <div class="col-2"><p class="select">Introduzione</p></div>
+                        <div class="col-2"><p class="select">Norme sulla privacy</p></div>
+                        <div class="col-2"><p class="select">Termini di servizio</p></div>
+                        <div class="col-2"><p class="select">Tecnologie</p></div>
+                        <div class="col-2"><p class="selected select">Domande Frequenti</p></div>
                     </div>
                 </div>
             </nav>
