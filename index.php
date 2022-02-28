@@ -148,6 +148,18 @@ $questions = [
             border-bottom: 3px dodgerblue solid;
             padding-bottom:30px;
         }
+        .else{
+            font-size: 12px;
+        }
+        .fa-globe{
+            font-size: 15px;
+            color: black;
+        }
+        footer{
+            height: 50px;
+            background-color: #c0cfca;
+            padding-top: 15px;
+        }
     </style>
 </head>
 <body>
@@ -183,6 +195,29 @@ $questions = [
             </div>
         </div>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-5 else">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-3">Google </div>
+                            <div class="col-3">Tutto su Google</div>
+                            <div class="col-3">Privacy</div>
+                            <div class="col-3">Termini</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <i class="fas fa-globe"></i>
+                    <select name="language" id="">
+                        <option value="">Italian</option>
+                        <option value="">English</option>
+                        <option value="">Spanish</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
