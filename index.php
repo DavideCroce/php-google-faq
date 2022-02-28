@@ -137,7 +137,7 @@ $questions = [
             width: 100%;
             background-color: #fff;
             border-bottom: 2px solid grey;
-            height:140px;
+            height:134px;
         }
         main{
             padding-top: 300px;
