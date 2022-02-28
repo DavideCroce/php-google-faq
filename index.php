@@ -45,13 +45,16 @@ $questions = [
     ],
     "country" => [
         "title" => "Perché il mio account è associato a un paese?",
-        "content" => "Il tuo account è associato a un paese (o territorio) nei Termini di servizio per poter stabilire due cose:
-
-        1 - La società consociata Google che offre i servizi, tratta le tue informazioni ed è responsabile del rispetto delle leggi sulla privacy vigenti. Generalmente Google offre i propri servizi per i consumatori tramite una delle due società seguenti:
-            a - Google Ireland Limited, se gli utenti sono residenti nello Spazio economico europeo (paesi dell'Unione europea, oltre a Islanda, Liechtenstein e Norvegia) o in Svizzera.
-            b - Google LLC, con sede negli Stati Uniti, per il resto del mondo.
-        2- La versione dei termini che regola il nostro rapporto, che può variare in base alle leggi locali.
-           Tieni presente che i servizi Google sono fondamentalmente gli stessi a prescindere dalla società consociata che li offre o dal paese a cui è associato il tuo account."
+        "content" => "Il tuo account è associato a un paese (o territorio) nei Termini di servizio per poter stabilire due cose: 
+        <ul>
+        <li>1 - La società consociata Google che offre i servizi, tratta le tue informazioni ed è responsabile del rispetto delle leggi sulla privacy vigenti. Generalmente Google offre i propri servizi per i consumatori tramite una delle due società seguenti:
+            <ul>
+            <li>a - Google Ireland Limited, se gli utenti sono residenti nello Spazio economico europeo (paesi dell'Unione europea, oltre a Islanda, Liechtenstein e Norvegia) o in Svizzera.</li>
+            <li>b - Google LLC, con sede negli Stati Uniti, per il resto del mondo.</li>
+            </ul>
+        </li>
+        <li>2- La versione dei termini che regola il nostro rapporto, che può variare in base alle leggi locali.
+           Tieni presente che i servizi Google sono fondamentalmente gli stessi a prescindere dalla società consociata che li offre o dal paese a cui è associato il tuo account.</li></ul>"
         ],
     "find" => [
         "title" => "Stabilire il paese associato al tuo account",
@@ -70,12 +73,7 @@ $questions = [
         "content" => "In alcuni casi sì. Quando fai clic su un risultato della Ricerca Google, il tuo browser web potrebbe reindirizzare alla pagina web di destinazione anche l'indirizzo Internet, o URL, della pagina dei risultati di ricerca sotto forma di URL referrer. Talvolta, l'URL della pagina dei risultati di ricerca potrebbe contenere la query di ricerca che hai inserito. Se utilizzi la ricerca SSL (la funzione di ricerca criptata di Google), nella maggior parte dei casi i termini di ricerca non vengono inviati come parte dell'URL negli URL referrer. Questo comportamento può fare eccezione, ad esempio se utilizzi alcuni browser meno diffusi. Ulteriori informazioni sulla ricerca SSL sono disponibili qui. Le query di ricerca o le informazioni contenute nell'URL referrer potrebbero essere disponibili mediante Google Analytics o un'API (Application Programming Interface). Inoltre, gli inserzionisti potrebbero ricevere informazioni relative all' esatte parole chiave che hanno determinato il clic su un annuncio."
     ]
     ];
-$qna = array_keys($questions);
 
-$title = $qna['title'];
-$content = $qna['content'];
-
-var_dump($title);
 ?>
 
 <!DOCTYPE html>
@@ -88,5 +86,9 @@ var_dump($title);
     <title>Domande frequenti - Privacy e Termini</title>
 </head>
 <body>
+       <?php foreach($questions as $question) : ?>
+         <h1><?php echo $question ['title']?></h1>
+         <p><?php echo $question ['content']?></p>
+       <? endforeach ?>
 </body>
 </html>
