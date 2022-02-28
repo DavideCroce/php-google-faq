@@ -164,7 +164,7 @@ $questions = [
         }
         footer{
             height: 50px;
-            background-color: #c0cfca;
+            background-color: #d1d1d1;
             padding-top: 15px;
         }
     </style>
